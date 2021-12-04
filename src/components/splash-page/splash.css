@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  font-family: "Bubblegum Sans", cursive;
+}
+.left {
+  height: 90vh;
+  margin-top: 10vh;
+}
+
+.right {
+  font-size: 50px;
+  height: 90vh;
+  margin-top: 10vh;
+  padding: 5px;
+  animation: fade 5s infinite;
+}
+@keyframes fade {
+  from {
+    color: rgba(255, 255, 255, 1);
+  }
+  50% {
+    color: rgba(255, 255, 255, 0);
+  }
+
+  to {
+    color: rgba(255, 255, 255, 1);
+  }
+}
