@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./splash.css";
 
 let sentences = [
@@ -10,13 +10,29 @@ let sentences = [
 
 export default function Splash() {
   const [timer, setTimer] = useState(0);
-  console.log(timer);
+  const [color, setColor] = useState("white");
+
+  useEffect(() => {
+    setTimeout(() => {
+      timer > 3 ? setTimer(0) : setTimer(timer + 1);
+    }, 2500);
+  }, [timer]);
+
+  setTimeout(() => {
+    setColor("rgba(255,255,255,0.3)");
+  }, 2000);
+
+  useEffect(() => {
+    setColor("white");
+  }, [timer]);
+
   return (
     <div className="container">
       <div className="left">
         <img src="assets/aladdin-genie.jpeg" alt="ilgienio" />
       </div>
-      <div className="right">
+
+      <div style={{ color: "red" }} className="right">
         <p>{sentences[timer]}</p>
       </div>
     </div>
