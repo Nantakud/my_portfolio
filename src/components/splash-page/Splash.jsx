@@ -14,16 +14,8 @@ export default function Splash() {
 
   useEffect(() => {
     setTimeout(() => {
-      timer > 3 ? setTimer(0) : setTimer(timer + 1);
+      timer > 2 ? setTimer(0) : setTimer(timer + 1);
     }, 2500);
-  }, [timer]);
-
-  setTimeout(() => {
-    setColor("rgba(255,255,255,0.3)");
-  }, 2000);
-
-  useEffect(() => {
-    setColor("white");
   }, [timer]);
 
   return (
@@ -32,7 +24,7 @@ export default function Splash() {
         <img src="assets/aladdin-genie.jpeg" alt="ilgienio" />
       </div>
 
-      <div style={{ color: "red" }} className="right">
+      <div className="right">
         <p>{sentences[timer]}</p>
       </div>
     </div>

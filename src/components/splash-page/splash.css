@@ -24,8 +24,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fade 2.5s infinite;
 }
 
 .right p {
   padding: 5px;
+}
+
+@keyframes fade {
+  from {
+    color: white;
+  }
+
+  50% {
+    color: rgba(255, 255, 255, 0);
+  }
 }
