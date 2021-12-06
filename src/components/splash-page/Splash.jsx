@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 import "./splash.css";
 
 let sentences = [
@@ -13,8 +14,11 @@ export default function Splash() {
   const [color, setColor] = useState("white");
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       timer > 2 ? setTimer(0) : setTimer(timer + 1);
+      return function cleanup() {
+        clearTimeout(timeout);
+      };
     }, 2500);
   }, [timer]);
 
