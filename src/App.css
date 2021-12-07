@@ -1,3 +1,8 @@
+.app_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
 .router {
   display: flex;
   align-items: center;

@@ -9,12 +9,16 @@ export default function Sidebar() {
   return (
     <div className="wrapper">
       <i className="arrow" onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? <FaChevronLeft /> : <FaChevronRight />}
+        {isOpen ? <FaChevronRight /> : <FaChevronLeft />}
       </i>
       {isOpen && (
         <div className="links">
-          <Link to="/">Home</Link>
-          <Link to="/projects">Projects</Link>
+          <Link to="/" onClick={() => setIsOpen(!isOpen)}>
+            Home
+          </Link>
+          <Link to="/projects" onClick={() => setIsOpen(!isOpen)}>
+            Projects
+          </Link>
         </div>
       )}
     </div>
