@@ -9,7 +9,7 @@ export default function Sidebar() {
   return (
     <div className="wrapper">
       <i className="arrow" onClick={() => setIsOpen(!isOpen)}>
-        <FaChevronLeft />
+        {isOpen ? <FaChevronLeft /> : <FaChevronRight />}
       </i>
       {isOpen && (
         <div className="links">
