@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import "./splash.css";
+import "./splash.scss";
 
 let sentences = [
   "Ciao I'm Francesco and I like coding",

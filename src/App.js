@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import Splash from "./components/splash-page/Splash";
 import Projects from "./components/projects/Projects";
 import Sidebar from "./components/sidebar/Sidebar";

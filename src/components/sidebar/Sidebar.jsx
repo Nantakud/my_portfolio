@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./sidebar.css";
+import "./sidebar.scss";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useState } from "react";
 
