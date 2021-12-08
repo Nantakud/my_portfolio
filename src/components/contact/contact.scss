@@ -3,4 +3,42 @@
   color: white;
   text-align: center;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .left {
+    flex-grow: 0.5;
+    img {
+      height: 90vh;
+      width: auto;
+      border-radius: 5%;
+    }
+  }
+  .right {
+    border: solid 1.5px white;
+    border-radius: 5%;
+    height: 60vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    place-content: space-around;
+    .title {
+      font-size: 5vw;
+    }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        list-style-type: none;
+        a {
+          font-size: 5vw;
+          color: white;
+
+          :hover {
+            color: rgba(195, 150, 180);
+          }
+        }
+      }
+    }
+  }
 }
