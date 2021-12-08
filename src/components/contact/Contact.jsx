@@ -12,7 +12,7 @@ export default function Contact() {
         ></img>
       </div>
       <div className="right">
-        <span className="title">Get in touch!</span>
+        <span className="title">Get in touch</span>
         <ul className="social">
           <li>
             <a href="mailto:francesco.vacca.au@gmail.com">
