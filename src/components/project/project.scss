@@ -1,0 +1,31 @@
+.projects_container {
+  display: flex;
+  position: relative;
+  .video {
+    background-color: magenta;
+    border-radius: 7%;
+    width: 65vw;
+    height: 100vh;
+    z-index: 2;
+  }
+  .right {
+    position: absolute;
+    left: 50vw;
+    .stack {
+      position: relative;
+      background-color: aquamarine;
+      width: 40vw;
+      height: 50vh;
+      z-index: 1;
+    }
+    .description {
+      position: relative;
+      background-color: olive;
+      clip-path: polygon(37.5% 0, 100% 0, 100% 100%, 0% 100%);
+
+      width: 40vw;
+      height: 50vh;
+      z-index: 3;
+    }
+  }
+}
