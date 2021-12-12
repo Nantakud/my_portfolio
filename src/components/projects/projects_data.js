@@ -28,6 +28,39 @@ export const projects_data = [
     stack: ["Node", "JS", "P5"],
     source: "https://github.com/Nantakud/my_portfolio/commits/main",
     visit: "https://google.com",
-    id: 0,
+    id: 2,
+  },
+  {
+    title: "Prova 1",
+    description:
+      "Just adding more elements, so my test is more meaningful. ciao ciao carcifo",
+    video:
+      "https://www.youtube.com/watch?v=IF6k0uZuypA&list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb&index=5",
+    stack: ["Node", "JS", "P5"],
+    source: "https://github.com/Nantakud/my_portfolio/commits/main",
+    visit: "https://google.com",
+    id: 3,
+  },
+  {
+    title: "Prova 2",
+    description:
+      "Just adding more elements, so my test is more meaningful. ciao ciao pataa",
+    video:
+      "https://www.youtube.com/watch?v=IF6k0uZuypA&list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb&index=5",
+    stack: ["Node", "JS", "P5"],
+    source: "https://github.com/Nantakud/my_portfolio/commits/main",
+    visit: "https://google.com",
+    id: 4,
+  },
+  {
+    title: "Prova 3",
+    description:
+      "Just adding more elements, so my test is more meaningful. ciao ciao caroat",
+    video:
+      "https://www.youtube.com/watch?v=IF6k0uZuypA&list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb&index=5",
+    stack: ["Node", "JS", "P5"],
+    source: "https://github.com/Nantakud/my_portfolio/commits/main",
+    visit: "https://google.com",
+    id: 5,
   },
 ];
