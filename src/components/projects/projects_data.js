@@ -63,4 +63,59 @@ export const projects_data = [
     visit: "https://google.com",
     id: 5,
   },
+  {
+    title: "Prova 4",
+    description:
+      "Just adding more elements, so my test is more meaningful. ciao ciao barba",
+    video:
+      "https://www.youtube.com/watch?v=IF6k0uZuypA&list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb&index=5",
+    stack: ["Node", "JS", "P5"],
+    source: "https://github.com/Nantakud/my_portfolio/commits/main",
+    visit: "https://google.com",
+    id: 6,
+  },
+  {
+    title: "Prova 5",
+    description:
+      "Just adding more elements, so my test is more meaningful. ciao ciao clamaro",
+    video:
+      "https://www.youtube.com/watch?v=IF6k0uZuypA&list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb&index=5",
+    stack: ["Node", "JS", "P5"],
+    source: "https://github.com/Nantakud/my_portfolio/commits/main",
+    visit: "https://google.com",
+    id: 7,
+  },
+  {
+    title: "Prova 6",
+    description:
+      "Just adding more elements, so my test is more meaningful. ciao ciao distase4",
+    video:
+      "https://www.youtube.com/watch?v=IF6k0uZuypA&list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb&index=5",
+    stack: ["Node", "JS", "P5"],
+    source: "https://github.com/Nantakud/my_portfolio/commits/main",
+    visit: "https://google.com",
+    id: 8,
+  },
+  {
+    title: "Prova 7",
+    description:
+      "Just adding more elements, so my test is more meaningful. ciao ciao <ballosos></ballosos>",
+    video:
+      "https://www.youtube.com/watch?v=IF6k0uZuypA&list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb&index=5",
+    stack: ["Node", "JS", "P5"],
+    source: "https://github.com/Nantakud/my_portfolio/commits/main",
+    visit: "https://google.com",
+    id: 9,
+  },
+  {
+    title: "Prova 8",
+    description:
+      "Just adding more elements, so my test is more meaningful. ciao ciao washington>",
+    video:
+      "https://www.youtube.com/watch?v=IF6k0uZuypA&list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb&index=5",
+    stack: ["Node", "JS", "P5"],
+    source: "https://github.com/Nantakud/my_portfolio/commits/main",
+    visit: "https://google.com",
+    id: 10,
+  },
 ];
