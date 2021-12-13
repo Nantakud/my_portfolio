@@ -43,31 +43,39 @@ export default function Slider({ setProject }) {
     <div className="slider_container">
       <header>Other Projects</header>
       <section className="images">
-        <FaChevronLeft
-          onClick={() => {
-            let newProjects = handleLeftClick();
-            setShownProjects(newProjects);
-          }}
-        />
-        {shownProjects.map((project) => {
-          return (
-            <div
-              key={project.id}
-              className="slide"
-              onClick={() => {
-                setProject(project.id);
-              }}
-            >
-              {project.title}
-            </div>
-          );
-        })}
-        <FaChevronRight
-          onClick={() => {
-            let newProjects = handleRightClick();
-            setShownProjects(newProjects);
-          }}
-        />
+        <div className="left">
+          <FaChevronLeft
+            className="chevron"
+            onClick={() => {
+              let newProjects = handleLeftClick();
+              setShownProjects(newProjects);
+            }}
+          />
+        </div>
+        <div className="center">
+          {shownProjects.map((project) => {
+            return (
+              <div
+                key={project.id}
+                className="slide"
+                onClick={() => {
+                  setProject(project.id);
+                }}
+              >
+                <div className="title">{project.title}</div>
+              </div>
+            );
+          })}
+        </div>
+        <div className="right">
+          <FaChevronRight
+            className="chevron"
+            onClick={() => {
+              let newProjects = handleRightClick();
+              setShownProjects(newProjects);
+            }}
+          />
+        </div>
       </section>
     </div>
   );
