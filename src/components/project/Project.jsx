@@ -11,9 +11,16 @@ export default function Project({ project }) {
       ></iframe>
       <div className="right">
         <div className="stack_container">
-          {project.stack.map((stack) => {
-            return <div className="stack">{stack}</div>;
-          })}
+          <div className="text">STACK</div>
+          <div className="img_container">
+            {project.stack.map((stack) => {
+              return (
+                <div className="stack">
+                  <img src={stack} alt="" />
+                </div>
+              );
+            })}
+          </div>
         </div>
         <div className="description">
           <div className="text">{project.description}</div>

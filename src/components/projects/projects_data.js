@@ -4,7 +4,7 @@ export const projects_data = [
     description: "A revisitation of Space Invader",
     video:
       "https://www.youtube.com/embed/086aRavuRcQ?playlist=086aRavuRcQ&autoplay=1&mute=1&loop=1&controls=0",
-    stack: ["Node", "JS", "P5"],
+    stack: ["assets/nodejs.svg", "assets/javascript.svg", "assets/p5js.svg"],
     source: "https://github.com/Nantakud/my_portfolio/commits/main",
     visit: "https://google.com",
     id: 0,
@@ -15,7 +15,7 @@ export const projects_data = [
       "You can rent a dvd online, even if nobody is doing it anymore",
     video:
       "https://www.youtube.com/watch?v=IF6k0uZuypA&list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb&index=5",
-    stack: ["PHP", "JS"],
+    stack: ["assets/php.png", "assets/javascript.svg"],
     source: "https://github.com/Nantakud/my_portfolio/commits/main",
     visit: "https://google.com",
     id: 1,
@@ -25,7 +25,7 @@ export const projects_data = [
     description: "E-commerce solution for a fast food restaurant",
     video:
       "https://www.youtube.com/watch?v=IF6k0uZuypA&list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb&index=5",
-    stack: ["Node", "JS", "P5"],
+    stack: ["assets/nodejs.svg", "assets/javascript.svg", "assets/p5js.svg"],
     source: "https://github.com/Nantakud/my_portfolio/commits/main",
     visit: "https://google.com",
     id: 2,
@@ -36,7 +36,13 @@ export const projects_data = [
       "Just adding more elements, so my test is more meaningful. ciao ciao carcifo",
     video:
       "https://www.youtube.com/watch?v=IF6k0uZuypA&list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb&index=5",
-    stack: ["Node", "JS", "P5"],
+    stack: [
+      "assets/nodejs",
+      "assets/angular.png",
+      "assets/ionic.jpeg",
+      "assets/phaser.jpeg",
+      "assets/react.jpeg",
+    ],
     source: "https://github.com/Nantakud/my_portfolio/commits/main",
     visit: "https://google.com",
     id: 3,
@@ -47,7 +53,7 @@ export const projects_data = [
       "Just adding more elements, so my test is more meaningful. ciao ciao pataa",
     video:
       "https://www.youtube.com/watch?v=IF6k0uZuypA&list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb&index=5",
-    stack: ["Node", "JS", "P5"],
+    stack: ["assets/phaser.jpeg", "assets/react.jpeg"],
     source: "https://github.com/Nantakud/my_portfolio/commits/main",
     visit: "https://google.com",
     id: 4,

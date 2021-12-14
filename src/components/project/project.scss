@@ -19,12 +19,16 @@
       height: 30vh;
       z-index: 1;
       display: flex;
-      align-items: flex-end;
-      justify-content: space-evenly;
-      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
 
       .stack {
         margin-right: 2vw;
+        img {
+          width: 5vw;
+          height: 5vh;
+        }
       }
     }
     .description {
@@ -37,6 +41,7 @@
       width: 40vw;
       height: 40vh;
       z-index: 3;
+
       .text {
         margin-right: 2vw;
       }
