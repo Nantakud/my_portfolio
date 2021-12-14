@@ -12,21 +12,34 @@
   .right {
     position: absolute;
     left: 50vw;
-    .stack {
+    .stack_container {
       position: relative;
       background-color: aquamarine;
       width: 40vw;
       height: 30vh;
       z-index: 1;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+      .stack {
+        margin-right: 2vw;
+      }
     }
     .description {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
       position: relative;
       background-color: olive;
       clip-path: polygon(37.5% 0, 100% 0, 100% 100%, 0% 100%);
-
       width: 40vw;
       height: 40vh;
       z-index: 3;
+      .text {
+        margin-right: 2vw;
+      }
     }
   }
 }

@@ -3,7 +3,7 @@ export const projects_data = [
     title: "VideoGame",
     description: "A revisitation of Space Invader",
     video:
-      "https://www.youtube.com/watch?v=IF6k0uZuypA&list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb&index=5",
+      "https://www.youtube.com/embed/086aRavuRcQ?playlist=086aRavuRcQ&autoplay=1&mute=1&loop=1&controls=0",
     stack: ["Node", "JS", "P5"],
     source: "https://github.com/Nantakud/my_portfolio/commits/main",
     visit: "https://google.com",
