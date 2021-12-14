@@ -5,6 +5,7 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  transition: 2s all ease;
 
   header {
     font-size: 2.5vw;
@@ -34,13 +35,18 @@
       }
     }
 
+    .right {
+      display: flex;
+      justify-content: flex-end;
+    }
+
     .center {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 70vw;
       .slide {
-        border: 3px solid magenta;
+        border: 3px solid rgb(61, 61, 61);
         background-color: sienna;
         width: 270px;
         height: 70px;
@@ -48,6 +54,14 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        opacity: 0.9;
+        &:hover {
+          border-color: black;
+          opacity: 1;
+          .title {
+            font-size: larger;
+          }
+        }
       }
     }
   }
