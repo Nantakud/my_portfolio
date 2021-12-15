@@ -34,11 +34,17 @@ export default function Project({ project }) {
                 <FaGithubSquare />
               </a>
             </div>
-            <div className="visit link">
-              <a href={project.visit} target="_blank" rel="noopener noreferrer">
-                <FaGlobe />
-              </a>
-            </div>
+            {project.visit && (
+              <div className="visit link">
+                <a
+                  href={project.visit}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGlobe />
+                </a>
+              </div>
+            )}
           </div>
           <div className="text_container">
             <div className="text">{project.description}</div>

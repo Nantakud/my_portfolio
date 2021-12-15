@@ -7,7 +7,7 @@ export default function Contact() {
     <div className="contact_wrapper">
       <div className="left">
         <img
-          src="assets/handshake.png"
+          src="assets/handshake.svg"
           alt="Business vector created by pch.vector - www.freepik.com"
         ></img>
       </div>
