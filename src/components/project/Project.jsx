@@ -1,4 +1,5 @@
 import "./project.scss";
+import { FaGlobe, FaGithubSquare } from "react-icons/fa";
 
 export default function Project({ project }) {
   return (
@@ -23,7 +24,25 @@ export default function Project({ project }) {
           </div>
         </div>
         <div className="description">
-          <div className="text">{project.description}</div>
+          <div className="links_container">
+            <div className="source link">
+              <a
+                href={project.source}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithubSquare />
+              </a>
+            </div>
+            <div className="visit link">
+              <a href={project.visit} target="_blank" rel="noopener noreferrer">
+                <FaGlobe />
+              </a>
+            </div>
+          </div>
+          <div className="text_container">
+            <div className="text">{project.description}</div>
+          </div>
         </div>
       </div>
     </div>
