@@ -14,10 +14,10 @@ export default function Project({ project }) {
         <div className="stack_container">
           <div className="text">STACK</div>
           <div className="img_container">
-            {project.stack.map((stack) => {
+            {project.stack.map((tech, index) => {
               return (
-                <div className="stack">
-                  <img src={stack} alt="" />
+                <div className="stack" key={index}>
+                  <img src={tech} alt="" />
                 </div>
               );
             })}
