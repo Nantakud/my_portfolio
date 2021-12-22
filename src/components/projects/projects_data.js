@@ -60,9 +60,9 @@ export const projects_data = [
       "An android app, created as a platform for simple CRUD operation on a database",
     video:
       "https://www.youtube.com/watch?v=IF6k0uZuypA&list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb&index=5",
-    stack: ["assets/angular.svg", "assets/ionic.svg"],
+    stack: ["assets/typescript.svg", "assets/angular.svg", "assets/ionic.svg"],
     source: "https://github.com/Nantakud/my_portfolio/commits/main",
-    visit: "https://google.com",
+    visit: null,
     id: 5,
   },
 ];
