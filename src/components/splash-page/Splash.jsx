@@ -25,7 +25,7 @@ export default function Splash() {
   return (
     <div className="container">
       <div className="left">
-        <img src="assets/aladdin-genie.jpeg" alt="ilgienio" />
+        <img src="assets/genie.png" alt="ilgienio" />
       </div>
 
       <div className="right">
