@@ -8,7 +8,7 @@
   transition: 2s all ease;
 
   header {
-    font-size: 2.5vw;
+    font-size: 2.5rem;
     color: magenta;
   }
   .images {
@@ -47,20 +47,16 @@
       width: 70vw;
       .slide {
         border: 3px solid rgb(61, 61, 61);
-        background-color: sienna;
-        width: 270px;
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         cursor: pointer;
-        opacity: 0.9;
+        opacity: 0.8;
+        width: 270px;
+        height: 155px;
         &:hover {
           border-color: black;
           opacity: 1;
-          .title {
-            font-size: larger;
-          }
+        }
+        img {
+          object-fit: cover;
         }
       }
     }

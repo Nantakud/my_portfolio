@@ -47,6 +47,7 @@ export default function Project({ project }) {
             )}
           </div>
           <div className="text_container">
+            <div className="title">{project.title}</div>
             <div className="text">{project.description}</div>
           </div>
         </div>

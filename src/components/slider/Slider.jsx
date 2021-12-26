@@ -62,7 +62,7 @@ export default function Slider({ setProject }) {
                   setProject(project.id);
                 }}
               >
-                <div className="title">{project.title}</div>
+                <img src={project.thumb} alt={project.title} />
               </div>
             );
           })}
