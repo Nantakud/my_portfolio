@@ -9,6 +9,7 @@ export default function Project({ project }) {
         src={project.video}
         frameboard="0"
         allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture"
+        title={project.title}
       ></iframe>
       <div className="right">
         <div className="stack_container">

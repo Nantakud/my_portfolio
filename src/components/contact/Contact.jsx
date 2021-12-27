@@ -1,5 +1,4 @@
 import "./contact.scss";
-import { TiSocialGithub, TiSocialLinkedin } from "react-icons/ti";
 import { FaLinkedinIn, FaGithub, FaCodepen, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {

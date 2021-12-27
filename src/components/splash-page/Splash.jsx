@@ -11,7 +11,6 @@ let sentences = [
 
 export default function Splash() {
   const [timer, setTimer] = useState(0);
-  const [color, setColor] = useState("white");
 
   useEffect(() => {
     const timeout = setTimeout(() => {
