@@ -8,10 +8,42 @@
   font-family: "Bubblegum Sans", cursive;
 
   .left {
+    position: relative;
     overflow: hidden;
     height: 90vh;
     width: 55vw;
     margin-top: 10vh;
+
+    img {
+      object-fit: cover;
+    }
+
+    .magic {
+      position: absolute;
+      top: 35%;
+      left: 75%;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: white;
+      animation: 4s infinite alternate bounce;
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+    }
+    @keyframes bounce {
+      25% {
+        transform: translateY(-200%);
+      }
+      50% {
+        transform: translateY(-100%);
+      }
+      75% {
+        transform: translateY(-100%);
+      }
+    }
   }
 
   .right {
