@@ -1,11 +1,10 @@
 .slider_container {
-  width: 90vw;
+  width: 100%;
   height: 30vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  transition: 2s all ease;
 
   header {
     font-size: 2.5rem;
@@ -16,16 +15,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 85vw;
-
+    width: 90%;
     .left,
     .right {
-      width: 5vw;
+      width: 5%;
+      padding: 2rem;
       .chevron {
         cursor: pointer;
         border: solid black 0.5px;
-        width: 2.5vw;
-        height: 5vh;
+        width: 2.5rem;
         border-radius: 7%;
         background-color: rgba(0, 0, 0, 0.2);
         &:hover {
@@ -44,7 +42,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 70vw;
+      width: 90%;
       .slide {
         border: 3px solid rgb(61, 61, 61);
         cursor: pointer;
