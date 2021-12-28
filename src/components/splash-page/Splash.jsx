@@ -11,9 +11,7 @@ let sentences = [
 
 let technologies = [
   "assets/angular.svg",
-  "assets/ionic.svg",
   "assets/javascript.svg",
-  "assets/nodejs.svg",
   "assets/php.svg",
   "assets/react.svg",
   "assets/typescript.svg",

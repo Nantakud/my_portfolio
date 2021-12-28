@@ -15,33 +15,31 @@
     margin-top: 10vh;
 
     img {
+      max-width: 100%;
       object-fit: cover;
     }
 
     .magic {
       position: absolute;
-      top: 35%;
+      padding: 0.5vw;
+      top: 20%;
       left: 75%;
-      width: 150px;
-      height: 150px;
+      width: 11vw;
+      height: 11vw;
       border-radius: 50%;
-      background-color: white;
-      animation: 4s infinite alternate bounce;
+      background: radial-gradient(circle at 30% 30%, #f5594b, transparent);
+      box-shadow: 1vw 0 17px 5px #ffff9c;
+      animation: 4s infinite alternate ease bounce;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img {
-        width: 150px;
-        height: 150px;
         border-radius: 50%;
       }
     }
     @keyframes bounce {
-      25% {
-        transform: translateY(-200%);
-      }
-      50% {
-        transform: translateY(-100%);
-      }
-      75% {
-        transform: translateY(-100%);
+      100% {
+        transform: translateY(-90%);
       }
     }
   }
