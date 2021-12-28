@@ -42,9 +42,11 @@ export default function Splash() {
   return (
     <div className="container">
       <div className="left">
-        <img src="assets/genie.png" alt="ilgienio" />
-        <div className="magic">
-          <img src={technologies[tech]} alt="non funzina" />
+        <div className="image">
+          <img src="assets/genie.png" alt="ilgienio" />
+          <div className="magic">
+            <img src={technologies[tech]} alt="non funzina" />
+          </div>
         </div>
       </div>
 
