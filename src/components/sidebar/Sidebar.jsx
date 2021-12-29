@@ -16,6 +16,9 @@ export default function Sidebar() {
           <Link to="/" onClick={() => setIsOpen(!isOpen)}>
             Home
           </Link>
+          <Link to="/about" onClick={() => setIsOpen(!isOpen)}>
+            About
+          </Link>
           <Link to="/projects" onClick={() => setIsOpen(!isOpen)}>
             Projects
           </Link>

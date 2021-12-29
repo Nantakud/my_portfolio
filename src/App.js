@@ -3,6 +3,7 @@ import Splash from "./components/splash-page/Splash";
 import Projects from "./components/projects/Projects";
 import Sidebar from "./components/sidebar/Sidebar";
 import Contact from "./components/contact/Contact";
+import About from "./components/about/About";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Splash />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<About />} />
           </Routes>
           <Sidebar />
         </Router>
