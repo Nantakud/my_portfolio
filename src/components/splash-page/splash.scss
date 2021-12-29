@@ -11,7 +11,7 @@
   .left {
     overflow: hidden;
     height: 90vh;
-    width: 70%;
+    width: 65%;
     padding-top: 5rem;
 
     .image {
@@ -20,15 +20,15 @@
       img {
         max-width: 100%;
         object-fit: cover;
+        float: right;
       }
 
       .magic {
         position: absolute;
-        padding: 0.5vw;
-        top: 20%;
-        left: 75%;
+        padding: 0.5rem;
         width: 11vw;
         height: 11vw;
+        left: 77%;
         border-radius: 50%;
         background: radial-gradient(circle at 30% 30%, #f5594b, transparent);
         box-shadow: 0 2vw 17px 5px #ffff9c;
@@ -42,7 +42,7 @@
       }
       @keyframes bounce {
         100% {
-          transform: translateY(-90%);
+          transform: translateY(120%);
           box-shadow: 0 0;
         }
       }
@@ -50,7 +50,7 @@
   }
 
   .right {
-    width: 30%;
+    width: 35%;
     font-size: 50px;
     height: 90vh;
 

@@ -43,9 +43,9 @@ export default function Splash() {
     <div className="container">
       <div className="left">
         <div className="image">
-          <img src="assets/genie.png" alt="ilgienio" />
+          <img src="assets/genie.png" alt="dev" />
           <div className="magic">
-            <img src={technologies[tech]} alt="non funzina" />
+            <img src={technologies[tech]} alt="tech" />
           </div>
         </div>
       </div>
