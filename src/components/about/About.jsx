@@ -16,8 +16,8 @@ export default function About() {
         </p>
         <figure className="image">
           <svg
-            width="1440"
-            height="1024"
+            width="450.068271"
+            height="300"
             viewBox="0 0 1440 1024"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,8 @@
+@import "./global.scss";
 body {
   margin: 0;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background: $background;
 }
 .app_wrapper {
   display: flex;

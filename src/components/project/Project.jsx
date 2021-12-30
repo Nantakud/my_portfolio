@@ -3,7 +3,12 @@ import { FaGlobe, FaGithubSquare } from "react-icons/fa";
 
 export default function Project({ project }) {
   return (
-    <div className="project_container">
+    <div
+      className="project_container"
+      onScroll={() => {
+        console.log("ci sono");
+      }}
+    >
       <iframe
         className="video"
         src={project.video}

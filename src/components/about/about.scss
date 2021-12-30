@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .about-wrapper {
   header {
     margin-top: 3rem;
@@ -11,6 +12,9 @@
     justify-content: space-evenly;
     .text {
       margin: 2rem;
+      padding: 0.5rem;
+      background: $bg;
+      text-align: justify;
     }
     .image {
       #southamerica,
