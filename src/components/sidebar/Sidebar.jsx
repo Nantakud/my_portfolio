@@ -7,7 +7,7 @@ export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="wrapper">
+    <div className="sidebar-wrapper">
       <i className="arrow" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <FaChevronRight /> : <FaChevronLeft />}
       </i>

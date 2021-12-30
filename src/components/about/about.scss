@@ -12,6 +12,22 @@
     .text {
       margin: 2rem;
     }
+    .image {
+      #southamerica,
+      #asia,
+      #australia,
+      #NorthAmerica,
+      #groenlandia,
+      #africa {
+        animation: globe 2s infinite alternate;
+      }
+
+      @keyframes globe {
+        50% {
+          fill: blue;
+        }
+      }
+    }
   }
   .third {
     margin-bottom: 2rem;
