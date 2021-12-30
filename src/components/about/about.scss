@@ -1,17 +1,19 @@
-header {
-  text-align: center;
-  font-weight: bold;
-  font-size: 3rem;
-  margin-top: 2rem;
-}
-section {
-  margin: 1rem 0 1rem 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  .image {
-    width: 50%;
+.about-wrapper {
+  header {
+    margin-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  section {
+    margin: 5rem 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    .text {
+      margin: 2rem;
+    }
+  }
+  .third {
+    margin-bottom: 2rem;
   }
 }
