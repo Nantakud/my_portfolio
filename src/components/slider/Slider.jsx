@@ -53,16 +53,16 @@ export default function Slider({ setProject }) {
           />
         </div>
         <div className="center">
-          {shownProjects.map((project) => {
+          {shownProjects.map(({ id, thumb, title }) => {
             return (
               <div
-                key={project.id}
+                key={id}
                 className="slide"
                 onClick={() => {
-                  setProject(project.id);
+                  setProject(id);
                 }}
               >
-                <img src={project.thumb} alt={project.title} />
+                <img src={thumb} alt={title} />
               </div>
             );
           })}
