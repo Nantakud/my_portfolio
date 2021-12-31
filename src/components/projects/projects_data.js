@@ -8,6 +8,18 @@ export const projects_data = [
     stack: ["assets/javascript.svg", "assets/p5js.svg"],
     source: "https://github.com/Nantakud/escape_alcatraz",
     visit: null,
+    details: {
+      detail1: {
+        text: "Lorem ipsum dolor sit amet.",
+        url: "assets/handshake.png",
+        alt: "vediamo se funziona",
+      },
+      detail2: {
+        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sapiente eius? Officia velit architecto ullam alias molestiae est quas perferendis!",
+        url: "assets/adventure.svg",
+        alt: "stiamo provando",
+      },
+    },
     id: 0,
   },
   {
@@ -19,6 +31,18 @@ export const projects_data = [
     stack: ["assets/php.svg", "assets/javascript.svg"],
     source: "https://github.com/Nantakud/my_portfolio/commits/main",
     visit: "http://infotech.scu.edu.au/~fvacca10/movie_zone/",
+    details: {
+      detail1: {
+        text: "Lorem ipsum dolor sit amet.",
+        url: "assets/handshake.png",
+        alt: "vediamo se funziona",
+      },
+      detail2: {
+        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sapiente eius? Officia velit architecto ullam alias molestiae est quas perferendis!",
+        url: "assets/adventure.svg",
+        alt: "stiamo provando",
+      },
+    },
     id: 1,
   },
   {
@@ -30,6 +54,18 @@ export const projects_data = [
     stack: ["assets/php.svg", "assets/javascript.svg"],
     source: "https://github.com/Nantakud/order_manager",
     visit: "https://live-rooster-clickncollect.pantheonsite.io/",
+    details: {
+      detail1: {
+        text: "Lorem ipsum dolor sit amet.",
+        url: "assets/handshake.png",
+        alt: "vediamo se funziona",
+      },
+      detail2: {
+        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sapiente eius? Officia velit architecto ullam alias molestiae est quas perferendis!",
+        url: "assets/adventure.svg",
+        alt: "stiamo provando",
+      },
+    },
     id: 2,
   },
   {
@@ -41,6 +77,18 @@ export const projects_data = [
     stack: ["assets/react.svg", "assets/sass.svg"],
     source: "https://github.com/Nantakud/my_portfolio/commits/main",
     visit: null,
+    details: {
+      detail1: {
+        text: "Lorem ipsum dolor sit amet.",
+        url: "assets/handshake.png",
+        alt: "vediamo se funziona",
+      },
+      detail2: {
+        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sapiente eius? Officia velit architecto ullam alias molestiae est quas perferendis!",
+        url: "assets/adventure.svg",
+        alt: "stiamo provando",
+      },
+    },
     id: 3,
   },
   {
@@ -52,6 +100,18 @@ export const projects_data = [
     stack: ["assets/javascript.svg", "assets/phaser.svg"],
     source: "https://github.com/Nantakud/fix_that_bug_game",
     visit: "https://francesco-vacca.itch.io/fix-that-bug",
+    details: {
+      detail1: {
+        text: "Lorem ipsum dolor sit amet.",
+        url: "assets/handshake.png",
+        alt: "vediamo se funziona",
+      },
+      detail2: {
+        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sapiente eius? Officia velit architecto ullam alias molestiae est quas perferendis!",
+        url: "assets/adventure.svg",
+        alt: "stiamo provando",
+      },
+    },
     id: 4,
   },
   {
@@ -63,6 +123,18 @@ export const projects_data = [
     stack: ["assets/typescript.svg", "assets/angular.svg", "assets/ionic.svg"],
     source: "https://github.com/Nantakud/my_portfolio/commits/main",
     visit: null,
+    details: {
+      detail1: {
+        text: "Lorem ipsum dolor sit amet.",
+        url: "assets/handshake.png",
+        alt: "vediamo se funziona",
+      },
+      detail2: {
+        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sapiente eius? Officia velit architecto ullam alias molestiae est quas perferendis!",
+        url: "assets/adventure.svg",
+        alt: "stiamo provando",
+      },
+    },
     id: 5,
   },
 ];

@@ -3,16 +3,17 @@ import { FaGlobe, FaGithubSquare } from "react-icons/fa";
 import Details from "../details/Details";
 
 export default function Project({ project }) {
+  const { title, video, stack, description, source, visit, details } = project;
   return (
     <div className="project_container">
-      <header className="title">{project.title}</header>
+      <header className="title">{title}</header>
       <div className="video-responsive">
         <iframe
           className="video"
-          src={project.video}
+          src={video}
           frameboard="0"
           allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture"
-          title={project.title}
+          title={title}
         ></iframe>
       </div>
 
@@ -20,10 +21,10 @@ export default function Project({ project }) {
         <div className="stack_container">
           <header className="text">STACK</header>
           <div className="img_container">
-            {project.stack.map((tech, index) => {
+            {stack.map((tech, index) => {
               return (
                 <i className="stack" key={index}>
-                  <img src={tech} alt="" />
+                  <img src={tech} alt="technology" />
                 </i>
               );
             })}
@@ -31,25 +32,17 @@ export default function Project({ project }) {
         </div>
         <div className="description">
           <div className="text_container">
-            <p className="text">{project.description}</p>
+            <p className="text">{description}</p>
           </div>
           <div className="links_container">
             <div className="source link">
-              <a
-                href={project.source}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={source} target="_blank" rel="noopener noreferrer">
                 <FaGithubSquare />
               </a>
             </div>
-            {project.visit && (
+            {visit && (
               <div className="visit link">
-                <a
-                  href={project.visit}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={visit} target="_blank" rel="noopener noreferrer">
                   <FaGlobe />
                 </a>
               </div>
@@ -57,9 +50,11 @@ export default function Project({ project }) {
           </div>
         </div>
       </div>
-
       <div className="details">
-        <Details></Details>
+        {Object.keys(details).map((detail, index) => {
+          const { text, url, alt } = details[detail];
+          return <Details key={index} text={text} url={url} alt={alt} />;
+        })}
       </div>
     </div>
   );

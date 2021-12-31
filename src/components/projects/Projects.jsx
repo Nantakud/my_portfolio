@@ -5,7 +5,7 @@ import Slider from "../slider/Slider";
 import { useState } from "react";
 
 export default function Projects() {
-  const [project, setProject] = useState(1);
+  const [project, setProject] = useState(0);
 
   return (
     <div className="projects_wrapper">
