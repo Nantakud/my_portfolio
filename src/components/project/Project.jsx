@@ -1,25 +1,13 @@
 import "./project.scss";
 import { FaGlobe, FaGithubSquare } from "react-icons/fa";
 import { useState, useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer";
 
 export default function Project({ project }) {
-  const [offesetY, setOffesetY] = useState(0);
-  const [active, setActive] = useState(false);
-  const detailRef = useRef();
-  const handleScroll = () => {
-    let distance =
-      detailRef.current.getBoundingClientRect().top - window.scrollY;
-    if (distance < 100 || distance < 0) {
-      setActive(true);
-    } else {
-      setActive(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.4,
+  });
 
   return (
     <div className="project_container">
@@ -77,46 +65,55 @@ export default function Project({ project }) {
       </div>
 
       <div className="details">
-        <div className={`detail ${active && "active"}`} ref={detailRef}>
-          <p className="text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
-            neque impedit incidunt repellendus qui suscipit? Architecto
-            excepturi minima et magni rerum dicta nesciunt temporibus, officiis,
-            facere consequuntur omnis. Amet corporis mollitia, cumque animi
-            perferendis officiis voluptates esse numquam expedita hic totam quam
-            ipsam libero odio quod! Mollitia unde ut nostrum ratione
-            perspiciatis suscipit vitae tempora deserunt explicabo dolorem eius
-            laborum facere voluptas velit tenetur, non, iusto doloremque quis
-            iure reprehenderit cum necessitatibus eligendi! Repudiandae ex
-            incidunt illo rerum recusandae eaque quisquam sapiente sit, tenetur
-            maiores ut eos inventore culpa non, illum architecto libero nisi
-            soluta numquam corporis, magnam nam. Repellat.
-          </p>
+        <div className={`detail ${inView && "zoom"}`} ref={ref}>
+          <div className="text">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Temporibus neque impedit incidunt repellendus qui suscipit?
+              Architecto excepturi minima et magni rerum dicta nesciunt
+              temporibus, officiis, facere consequuntur omnis. Amet corporis
+              mollitia, cumque animi perferendis officiis voluptates esse
+              numquam expedita hic totam quam ipsam libero odio quod! Mollitia
+              unde ut nostrum ratione perspiciatis suscipit vitae tempora
+              deserunt explicabo dolorem eius laborum facere voluptas velit
+              tenetur, non, iusto doloremque quis iure reprehenderit cum
+              necessitatibus eligendi! Repudiandae ex incidunt illo rerum
+              recusandae eaque quisquam sapiente sit, tenetur maiores ut eos
+              inventore culpa non, illum architecto libero nisi soluta numquam
+              corporis, magnam nam. Repellat.
+            </p>
+          </div>
           <div className="image">
             <img src="assets/movie_zone_thumbnail.png" alt="just a test" />
           </div>
         </div>
         <div className="detail">
-          <p className="text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
-            ipsum earum totam voluptates omnis atque perspiciatis excepturi
-            debitis at facere est fugit cum voluptate id dolor adipisci mollitia
-            rerum ducimus. Beatae, voluptatum! Accusantium, fuga magni.
-          </p>
+          <div className="text">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+              ipsum earum totam voluptates omnis atque perspiciatis excepturi
+              debitis at facere est fugit cum voluptate id dolor adipisci
+              mollitia rerum ducimus. Beatae, voluptatum! Accusantium, fuga
+              magni.
+            </p>
+          </div>
           <div className="image">
             <img src="assets/movie_zone_thumbnail.png" alt="just a test" />
           </div>
         </div>
         <div className="detail">
-          <p className="text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
-            sint veritatis odio nulla sapiente, itaque et eum vero placeat
-            corrupti repellendus aliquam sequi, quisquam nisi excepturi
-            expedita, aperiam quam repellat. Tempore saepe laudantium deleniti
-            perspiciatis dolor nulla adipisci vitae laboriosam, rerum inventore
-            molestias, maiores beatae aliquam, officia voluptatem excepturi quia
-            nisi necessitatibus enim dolorem iusto.
-          </p>
+          <div className="text">
+            <p>
+              {" "}
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
+              sint veritatis odio nulla sapiente, itaque et eum vero placeat
+              corrupti repellendus aliquam sequi, quisquam nisi excepturi
+              expedita, aperiam quam repellat. Tempore saepe laudantium deleniti
+              perspiciatis dolor nulla adipisci vitae laboriosam, rerum
+              inventore molestias, maiores beatae aliquam, officia voluptatem
+              excepturi quia nisi necessitatibus enim dolorem iusto.
+            </p>
+          </div>
           <div className="image">
             <img src="assets/movie_zone_thumbnail.png" alt="just a test" />
           </div>

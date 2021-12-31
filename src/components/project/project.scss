@@ -82,6 +82,7 @@
   .details {
     margin: 5rem 0;
     width: 100%;
+    transition: all 3s ease-in-out;
     .detail {
       height: 70vh;
       text-align: justify;
@@ -91,12 +92,15 @@
       justify-content: space-evenly;
       align-items: center;
       opacity: 0;
+      transform: scale(85%);
+      transition: 2s;
+
       .text {
-        width: 50%;
+        flex: 1;
         padding: 0 1rem;
       }
       .image {
-        width: 50%;
+        width: 60%;
         height: 100%;
         overflow: hidden;
 
@@ -107,8 +111,10 @@
         }
       }
     }
-    .active {
+    .zoom {
       opacity: 1;
+      transform: scale(100%);
+      transition: 2s;
     }
   }
 }
