@@ -468,7 +468,7 @@ export default function About() {
           <header>My Present</header>
           Lifelong learning is my philosophy, so on top of a Master in Foreign
           Affairs I just added a Bachelor of IT. Still, I have no intention to
-          stop studying any soon. My following steps will be exploring .NET
+          stop studying any soon. At the moment I'm busy exploring .NET
           framework, learning Python and digging into cloud computing.
         </p>
       </section>

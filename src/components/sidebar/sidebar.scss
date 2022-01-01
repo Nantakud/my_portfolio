@@ -1,6 +1,6 @@
 .sidebar-wrapper {
   color: white;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -9,7 +9,7 @@
 .links {
   flex-grow: 2;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 }
