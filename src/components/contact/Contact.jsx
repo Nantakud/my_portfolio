@@ -7,7 +7,7 @@ export default function Contact() {
       <div className="left">
         <img
           src="assets/handshake.svg"
-          alt="Business vector created by pch.vector - www.freepik.com"
+          alt="two people shaking thier hands"
         ></img>
       </div>
       <div className="right">

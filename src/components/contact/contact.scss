@@ -2,29 +2,27 @@
   background-color: black;
   color: white;
   text-align: center;
-  height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-around;
+  padding: 3rem;
+
   .left {
-    flex-grow: 0.5;
+    width: 65%;
     img {
-      height: 90vh;
-      width: auto;
-      border-radius: 5%;
+      width: 75%;
     }
   }
   .right {
+    width: 35%;
     border: solid 1.5px white;
     border-radius: 5%;
-    height: 60vh;
-    width: 45vw;
     display: flex;
     flex-direction: column;
     place-content: space-around;
 
     .title {
-      font-size: 5vw;
+      font-size: 4vw;
       animation: rot 5s infinite alternate;
       @keyframes rot {
         33% {
@@ -41,10 +39,11 @@
     ul {
       display: flex;
       justify-content: space-evenly;
+      padding-left: 0;
       li {
         list-style-type: none;
         a {
-          font-size: 5vw;
+          font-size: 4vw;
           color: white;
 
           :hover {
