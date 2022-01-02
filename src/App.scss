@@ -1,10 +1,6 @@
 @import "./global.scss";
-html,
+
 body {
-  min-height: 100%;
-}
-body {
-  margin: 0;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background: $background;
 }
