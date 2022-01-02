@@ -1,53 +1,73 @@
 .contact_wrapper {
   background-color: black;
-  color: white;
-  text-align: center;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-around;
-  padding: 3rem;
-
-  .left {
-    width: 65%;
-    img {
-      width: 75%;
+  .wave_container {
+    position: relative;
+    width: auto;
+    height: 15vw;
+    background-origin: inherit;
+    .wave {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+      fill: white;
     }
   }
-  .right {
-    width: 35%;
-    border: solid 1.5px white;
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-    place-content: space-around;
 
-    .title {
-      font-size: 4vw;
-      animation: rot 5s infinite alternate;
-      @keyframes rot {
-        33% {
-          transform: rotate3d(1, 2, 3, 10deg);
-        }
-        66% {
-          transform: rotate3d(1, 2, 3, -10deg);
-        }
+  .container {
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 0;
+
+    .left {
+      img {
+        width: 75%;
       }
     }
-    .title::after {
-      content: "!";
-    }
-    ul {
+    .right {
+      border: solid 1.5px white;
+      border-radius: 5%;
+      padding: 0 2rem;
+      margin-right: 2rem;
+      align-self: stretch;
       display: flex;
-      justify-content: space-evenly;
-      padding-left: 0;
-      li {
-        list-style-type: none;
-        a {
-          font-size: 4vw;
-          color: white;
+      flex-direction: column;
+      place-content: space-around;
 
-          :hover {
-            color: rgba(195, 150, 180);
+      .title {
+        font-size: 4vw;
+        animation: rot 5s infinite alternate;
+        @keyframes rot {
+          33% {
+            transform: rotate3d(1, 2, 3, 10deg);
+          }
+          66% {
+            transform: rotate3d(1, 2, 3, -10deg);
+          }
+        }
+      }
+      .title::after {
+        content: "!";
+      }
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 0;
+        li {
+          list-style-type: none;
+          a {
+            font-size: 4vw;
+            color: white;
+
+            :hover {
+              color: rgba(195, 150, 180);
+            }
           }
         }
       }
