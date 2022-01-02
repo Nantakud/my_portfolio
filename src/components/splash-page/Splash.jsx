@@ -40,7 +40,7 @@ export default function Splash() {
   }, [tech]);
 
   return (
-    <div className="container">
+    <div className="splash_wrapper ">
       <div className="left">
         <div className="image">
           <img src="assets/genie.png" alt="dev" />
