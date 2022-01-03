@@ -1,4 +1,7 @@
 import "./about.scss";
+import Adventure from "../adventure/Adventure";
+import Learn from "../learn/Learn";
+import Team from "../team/Team";
 
 export default function About() {
   return (
@@ -14,10 +17,14 @@ export default function About() {
           strive for delivering customers' satisfaction, my unremitting care for
           my fellow teammates.
         </p>
-        <figure className="image"></figure>
+        <figure className="image">
+          <Adventure />
+        </figure>
       </section>
       <section className="second">
-        <figure className="image"></figure>
+        <figure className="image">
+          <Learn />
+        </figure>
         <p className="text">
           <header>My Present</header>
           Lifelong learning is my philosophy, so on top of a Master in Foreign
@@ -34,7 +41,9 @@ export default function About() {
           ruthless team of high-level reachers tech geeks, always ready to
           tackle a problem and transform it into an opportunity.
         </p>
-        <figure className="image"></figure>
+        <figure className="image">
+          <Team />
+        </figure>
       </section>
     </div>
   );
