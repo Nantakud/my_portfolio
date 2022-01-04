@@ -1,6 +1,10 @@
 import "./adventure.scss";
+import { useInView } from "react-intersection-observer";
 
 export default function Adventure() {
+  const { ref, inView } = useInView({
+    threshold: 0.4,
+  });
   return (
     <svg
       width="751"
@@ -8,6 +12,8 @@ export default function Adventure() {
       viewBox="0 0 751 500"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      ref={ref}
+      className={inView && "animate_adv"}
     >
       <g id="adventure" clip-path="url(#clip0_1_54)">
         <g id="adventure_2" clip-path="url(#clip1_1_54)">

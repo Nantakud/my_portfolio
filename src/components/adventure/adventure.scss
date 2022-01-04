@@ -9,66 +9,68 @@ g {
 // ==========================
 //animations
 //===========================
-#head {
-  transform-origin: bottom;
-  animation: shake 5s alternate infinite ease-in-out;
-}
-@keyframes shake {
-  0% {
-    transform: rotateZ(12deg);
+.animate_adv {
+  #head {
+    transform-origin: bottom;
+    animation: shake 5s alternate infinite ease-in-out;
   }
-  100% {
-    transform: rotateZ(-12deg);
+  @keyframes shake {
+    0% {
+      transform: rotateZ(12deg);
+    }
+    100% {
+      transform: rotateZ(-12deg);
+    }
   }
-}
 
-#left_arm {
-  transform-origin: 33% 7%;
-  animation: touch 2s alternate infinite;
-}
-@keyframes touch {
-  100% {
-    transform: rotate(-50deg);
+  #left_arm {
+    transform-origin: 33% 7%;
+    animation: touch 2s alternate infinite;
   }
-}
-
-#right_arm {
-  transform-origin: 50% 5%;
-  animation: wave 7s alternate infinite;
-}
-@keyframes wave {
-  100% {
-    transform: rotate(11deg);
+  @keyframes touch {
+    100% {
+      transform: rotate(-50deg);
+    }
   }
-}
 
-#globe {
-  transform-origin: center;
-  animation: spin 4s 2s infinite cubic-bezier(0.19, 1, 0.22, 1);
-}
-@keyframes spin {
-  100% {
-    transform: rotateZ(360deg);
+  #right_arm {
+    transform-origin: 50% 5%;
+    animation: wave 7s alternate infinite;
   }
-}
-
-#orbit1 {
-  transform-origin: center;
-  animation: orbit1 3s infinite alternate;
-}
-
-@keyframes orbit1 {
-  100% {
-    transform: rotateZ(25deg);
+  @keyframes wave {
+    100% {
+      transform: rotate(11deg);
+    }
   }
-}
-#orbit2 {
-  transform-origin: center;
-  animation: orbit2 3s infinite alternate;
-}
 
-@keyframes orbit2 {
-  100% {
-    transform: rotateZ(-25deg);
+  #globe {
+    transform-origin: center;
+    animation: spin 4s 2s infinite cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  @keyframes spin {
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  #orbit1 {
+    transform-origin: center;
+    animation: orbit1 3s infinite alternate;
+  }
+
+  @keyframes orbit1 {
+    100% {
+      transform: rotateZ(25deg);
+    }
+  }
+  #orbit2 {
+    transform-origin: center;
+    animation: orbit2 3s infinite alternate;
+  }
+
+  @keyframes orbit2 {
+    100% {
+      transform: rotateZ(-25deg);
+    }
   }
 }
