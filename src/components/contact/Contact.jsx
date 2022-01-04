@@ -1,5 +1,6 @@
 import "./contact.scss";
 import { FaLinkedinIn, FaGithub, FaCodepen, FaEnvelope } from "react-icons/fa";
+import Handshake from "../handshake/Handshake";
 
 export default function Contact() {
   return (
@@ -21,10 +22,9 @@ export default function Contact() {
       </div>
       <div className="container">
         <div className="left">
-          <img
-            src="assets/handshake.svg"
-            alt="two people shaking thier hands"
-          ></img>
+          <figure>
+            <Handshake />
+          </figure>
         </div>
         <div className="right">
           <span className="title">Get in touch</span>
