@@ -1,6 +1,10 @@
 import "./learn.scss";
+import { useInView } from "react-intersection-observer";
 
 export default function Learn() {
+  const { ref, inView } = useInView({
+    threshold: 0.4,
+  });
   return (
     <svg
       width="649"
@@ -8,6 +12,8 @@ export default function Learn() {
       viewBox="0 0 649 500"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={inView && "animate_learn"}
+      ref={ref}
     >
       <g id="learning" clip-path="url(#clip0_1_57)">
         <rect width="648.609" height="500" fill="white" />
@@ -157,22 +163,22 @@ export default function Learn() {
           />
           <g id="desktop_balls">
             <path
-              id="Vector_15"
+              id="ball1"
               d="M288.303 414.459C292.345 414.459 295.622 411.182 295.622 407.14C295.622 403.098 292.345 399.821 288.303 399.821C284.261 399.821 280.985 403.098 280.985 407.14C280.985 411.182 284.261 414.459 288.303 414.459Z"
               fill="#0578F3"
             />
             <path
-              id="Vector_16"
+              id="ball2"
               d="M452.13 404.325C456.172 404.325 459.449 401.049 459.449 397.007C459.449 392.965 456.172 389.688 452.13 389.688C448.088 389.688 444.811 392.965 444.811 397.007C444.811 401.049 448.088 404.325 452.13 404.325Z"
               fill="#0578F3"
             />
             <path
-              id="Vector_17"
+              id="ball3"
               d="M621.023 414.459C625.065 414.459 628.342 411.182 628.342 407.14C628.342 403.098 625.065 399.821 621.023 399.821C616.981 399.821 613.705 403.098 613.705 407.14C613.705 411.182 616.981 414.459 621.023 414.459Z"
               fill="#0578F3"
             />
             <path
-              id="Vector_18"
+              id="ball_central"
               d="M374.262 369.704C378.768 369.704 382.421 366.051 382.421 361.545C382.421 357.038 378.768 353.385 374.262 353.385C369.755 353.385 366.102 357.038 366.102 361.545C366.102 366.051 369.755 369.704 374.262 369.704Z"
               fill="#0578F3"
             />

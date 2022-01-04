@@ -1,0 +1,85 @@
+svg {
+  max-width: 100%;
+}
+
+g {
+  transform-box: fill-box;
+}
+
+// ==========================
+//animations
+//===========================
+.animate_learn {
+  #head {
+    animation: nodge 5s infinite alternate;
+    transform-origin: bottom;
+  }
+  @keyframes nodge {
+    100% {
+      transform: rotateZ(11deg);
+    }
+  }
+  #background_2 {
+    animation: shine 10s infinite alternate;
+  }
+  @keyframes shine {
+    100% {
+      transform: scale(1.005);
+      fill: rgb(250, 248, 220);
+    }
+  }
+
+  #arrows {
+    animation: up 3s infinite alternate;
+  }
+  @keyframes up {
+    100% {
+      transform: translateY(-30%);
+    }
+  }
+
+  #document {
+    animation: l_shake 3s infinite alternate;
+    transform-origin: bottom;
+  }
+  @keyframes l_shake {
+    100% {
+      transform: rotateY(-180deg);
+    }
+  }
+}
+#desktop_balls {
+  #ball1,
+  #ball3 {
+    animation: balldown 5s infinite alternate;
+  }
+  @keyframes balldown {
+    50% {
+      fill: #63a4e9;
+    }
+    100% {
+      transform: translateY(10%);
+    }
+  }
+  #ball2 {
+    animation: ballup 5s infinite alternate;
+  }
+  @keyframes ballup {
+    50% {
+      fill: #63a4e9;
+    }
+    100% {
+      transform: translateY(-10%);
+    }
+  }
+  #ball_central {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: l_grow 5s infinite alternate;
+  }
+  @keyframes l_grow {
+    100% {
+      transform: scale(1.5);
+    }
+  }
+}
