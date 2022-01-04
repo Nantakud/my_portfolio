@@ -1,0 +1,150 @@
+svg {
+  max-width: 100%;
+}
+
+g {
+  transform-box: fill-box;
+}
+
+.animate_team {
+  #right_girl {
+    #head_2 {
+      transform-origin: bottom;
+      animation: t_shake_2 3s infinite alternate;
+    }
+    @keyframes t_shake_2 {
+      100% {
+        transform: rotateZ(17deg);
+      }
+    }
+    #document2 {
+      transform-box: fill-box;
+      transform-origin: right;
+      animation: t_scroll_2 3s ease-in-out infinite alternate;
+    }
+    @keyframes t_scroll_2 {
+      100% {
+        transform: rotate(-25deg);
+      }
+    }
+
+    #r_shoe_2 {
+      transform-box: fill-box;
+      transform-origin: top;
+      animation: t_shoe_2 3s infinite alternate;
+    }
+    @keyframes t_shoe_2 {
+      100% {
+        transform: rotateZ(-11deg);
+      }
+    }
+  }
+  #dude {
+    #head {
+      transform-origin: bottom;
+      animation: t_shake 5s infinite alternate;
+    }
+    @keyframes t_shake {
+      100% {
+        transform: rotateZ(20deg);
+      }
+    }
+    #stick {
+      transform-origin: bottom;
+      transform-box: fill-box;
+      animation: t_indicate 1s infinite alternate;
+    }
+    @keyframes t_indicate {
+      100% {
+        transform: rotate(-20deg);
+      }
+    }
+  }
+  #left_girl {
+    #head_3 {
+      transform-origin: bottom;
+      animation: t_shake_3 3s infinite alternate;
+    }
+    @keyframes t_shake_3 {
+      100% {
+        transform: rotateZ(-5deg);
+      }
+    }
+
+    #document1 {
+      transform-box: fill-box;
+      transform-origin: right;
+      animation: t_scroll_1 5s cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite
+        alternate;
+    }
+    @keyframes t_scroll_1 {
+      100% {
+        transform: rotate(-22deg);
+      }
+    }
+
+    #left_arm_3 {
+      transform-origin: 50% 5%;
+      animation: t_agitate_3 6s ease-in infinite alternate;
+    }
+    @keyframes t_agitate_3 {
+      100% {
+        transform: rotate(25deg);
+      }
+    }
+  }
+  //desktop computer lines
+  #lines {
+    #line1 {
+      animation: t_color_1 5s infinite alternate;
+    }
+    @keyframes t_color_1 {
+      0% {
+        fill: #0578f3;
+      }
+      50% {
+        fill: #e6e6e6;
+      }
+      100% {
+        fill: #e6e6e6;
+      }
+    }
+    #line2 {
+      animation: t_color_2 5s infinite alternate;
+    }
+    @keyframes t_color_2 {
+      0% {
+        fill: #e6e6e6;
+      }
+      50% {
+        fill: #0578f3;
+      }
+      100% {
+        fill: #e6e6e6;
+      }
+    }
+    #line3 {
+      animation: t_color_3 5s infinite alternate;
+    }
+    @keyframes t_color_3 {
+      0% {
+        fill: #e6e6e6;
+      }
+      50% {
+        fill: #e6e6e6;
+      }
+      100% {
+        fill: #0578f3;
+      }
+    }
+  }
+
+  #graph > * {
+    animation: t_color_g 10s ease-in infinite;
+  }
+  @keyframes t_color_g {
+    100% {
+      fill: #0578f3;
+    }
+  }
+}
