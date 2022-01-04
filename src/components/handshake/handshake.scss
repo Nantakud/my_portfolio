@@ -10,4 +10,72 @@ g {
 //animations
 //===========================
 .animate_hs {
+  #right_dude {
+    #head_2 {
+      transform-origin: bottom;
+      animation: hs_nod_2 4s infinite alternate;
+    }
+    @keyframes hs_nod_2 {
+      100% {
+        transform: rotateZ(7deg);
+      }
+    }
+
+    #left_arm_2 {
+      transform-box: fill-box;
+      transform-origin: 50% 5%;
+      animation: hs_shake_2 3s ease-in infinite alternate;
+    }
+    @keyframes hs_shake_2 {
+      100% {
+        transform: rotate(10deg);
+      }
+    }
+  }
+  #left_dude {
+    #head {
+      transform-origin: bottom;
+      animation: hs_nod 3s infinite alternate;
+    }
+    @keyframes hs_nod {
+      100% {
+        transform: rotateZ(-14deg);
+      }
+    }
+
+    #left_arm {
+      transform-box: fill-box;
+      transform-origin: 50% 5%;
+      animation: hs_shake_2 3s ease-in infinite alternate;
+    }
+    @keyframes hs_shake_2 {
+      100% {
+        transform: rotate(-3deg);
+      }
+    }
+  }
+
+  #background {
+    #document_2 {
+      transform-box: fill-box;
+      transform-origin: right;
+      animation: hs_scroll_1 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite
+        alternate;
+    }
+    @keyframes hs_scroll_1 {
+      100% {
+        transform: rotate(22deg);
+      }
+    }
+  }
+
+  #right_sign {
+    transform-origin: center;
+    animation: hs_grow 10s ease infinite alternate;
+    @keyframes hs_grow {
+      100% {
+        transform: scale(1.5);
+      }
+    }
+  }
 }
