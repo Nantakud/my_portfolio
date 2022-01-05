@@ -1,70 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap");
 
+@import "../../global.scss";
 .splash_wrapper {
-  width: 100%;
-  font-family: "Bubblegum Sans", cursive;
   display: flex;
-  align-items: stretch;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
 
-  .left {
-    overflow: hidden;
-    width: 65%;
-    height: 90vh;
-    padding-top: 5rem;
+  .top {
+    width: 100%;
+    font-family: "Bubblegum Sans", cursive;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    position: relative;
 
-    .image {
-      position: relative;
-      max-width: 100%;
-      img {
+    aspect-ratio: 900/600;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-image: url("./curveAsymmetricalNegative.svg");
+    .left {
+      overflow: hidden;
+      width: 65%;
+      height: 70vh;
+      padding-top: 5rem;
+
+      .image {
+        position: relative;
         max-width: 100%;
-        object-fit: cover;
-        float: right;
-      }
-
-      .magic {
-        position: absolute;
-        padding: 0.5rem;
-        width: 11vw;
-        height: 11vw;
-        left: 77%;
-        border-radius: 50%;
-        background: radial-gradient(circle at 30% 30%, #f5594b, transparent);
-        box-shadow: 0 2vw 17px 5px #ffff9c;
-        animation: 4s infinite alternate ease bounce;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         img {
+          max-width: 100%;
+          object-fit: cover;
+          float: right;
+        }
+
+        .magic {
+          position: absolute;
+          padding: 0.5rem;
+          width: 11vw;
+          height: 11vw;
+          left: 77%;
           border-radius: 50%;
+          background: radial-gradient(circle at 30% 30%, #f5594b, transparent);
+          box-shadow: 0 2vw 17px 5px #ffff9c;
+          animation: 4s infinite alternate ease bounce;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            border-radius: 50%;
+          }
+        }
+        @keyframes bounce {
+          100% {
+            transform: translateY(120%);
+            box-shadow: 0 0;
+          }
         }
       }
-      @keyframes bounce {
-        100% {
-          transform: translateY(120%);
-          box-shadow: 0 0;
-        }
+    }
+
+    .right {
+      width: 35%;
+      font-size: 50px;
+      margin-top: 10vh;
+      margin-right: 5vw;
+
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      p {
+        padding: 5px;
+        position: relative;
+        left: 25px;
       }
     }
   }
 
-  .right {
-    width: 35%;
-    font-size: 50px;
-    height: 90vh;
-
-    margin-top: 10vh;
-    margin-right: 5vw;
-
-    color: black;
+  .bottom {
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
     p {
-      padding: 5px;
-      position: relative;
-      left: 25px;
+      color: $second-color;
+      font-size: 6rem;
+      font-family: "Moon Dance", cursive;
     }
   }
 }
