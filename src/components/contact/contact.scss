@@ -1,5 +1,6 @@
+@import "../../global.scss";
 .contact_wrapper {
-  background-color: black;
+  background-color: $dark-color;
   .wave_container {
     position: relative;
     width: auto;
@@ -26,6 +27,11 @@
     padding: 3rem 0;
 
     .left {
+      background-color: rgb(200, 200, 200);
+      background-color: $light-color;
+
+      border-radius: 10%;
+      padding: 2rem;
       img {
         width: 75%;
       }
@@ -66,7 +72,7 @@
             color: white;
 
             :hover {
-              color: rgba(195, 150, 180);
+              color: $main-color;
             }
           }
         }
