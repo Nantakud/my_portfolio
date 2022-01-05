@@ -3,11 +3,11 @@
 
 @import "../../global.scss";
 .splash_wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 2rem;
 
   .top {
     width: 100%;
@@ -17,11 +17,13 @@
     justify-content: space-around;
     position: relative;
 
-    aspect-ratio: 900/600;
+    //aspect-ratio: 900/600;
+    aspect-ratio: 900/450;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
-    background-image: url("./curveAsymmetricalNegative.svg");
+    background-position: center;
+    background-image: url("./blob2.svg");
+
     .left {
       overflow: hidden;
       width: 65%;
@@ -44,8 +46,12 @@
           height: 11vw;
           left: 77%;
           border-radius: 50%;
-          background: radial-gradient(circle at 30% 30%, #f5594b, transparent);
-          box-shadow: 0 2vw 17px 5px #ffff9c;
+          background: radial-gradient(
+            circle at 30% 30%,
+            $dark-color,
+            transparent
+          );
+          box-shadow: 0 0;
           animation: 4s infinite alternate ease bounce;
           display: flex;
           justify-content: center;
@@ -57,7 +63,7 @@
         @keyframes bounce {
           100% {
             transform: translateY(120%);
-            box-shadow: 0 0;
+            box-shadow: 0 2vw 17px 5px $light-color;
           }
         }
       }
@@ -66,13 +72,9 @@
     .right {
       width: 35%;
       font-size: 50px;
-      margin-top: 10vh;
-      margin-right: 5vw;
-
-      color: black;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
       flex-direction: column;
       position: relative;
       p {
@@ -87,8 +89,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
+
     p {
-      color: $second-color;
+      color: $main-color;
       font-size: 6rem;
       font-family: "Moon Dance", cursive;
     }
