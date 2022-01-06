@@ -1,18 +1,11 @@
 @import "./global.scss";
 
 body {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: $main-font;
 }
 .app_wrapper {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-content: center;
-}
-.router {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
 }
