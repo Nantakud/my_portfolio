@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import "./splash.scss";
 
 let technologies = [
-  "assets/angular.svg",
-  "assets/javascript.svg",
-  "assets/php.svg",
-  "assets/react.svg",
-  "assets/typescript.svg",
+  "assets/stack/angular.svg",
+  "assets/stack/javascript.svg",
+  "assets/stack/php.svg",
+  "assets/stack/react.svg",
+  "assets/stack/typescript.svg",
 ];
 
 export default function Splash() {
