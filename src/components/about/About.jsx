@@ -37,15 +37,17 @@ export default function About() {
       </div>
 
       <section className="first">
-        <p className="text">
-          <h1>My past</h1>
-          My innate curiosity and desire for adventures led me to test myself in
-          several industries and positions. Baker, teacher, carpenter, social
-          worker, shop manager. Name one job, and I likely did it. But with some
-          constants: my commitment to achieving company goals, my unstoppable
-          strive for delivering customers' satisfaction, my unremitting care for
-          my fellow teammates.
-        </p>
+        <div className="text">
+          <h2>My past</h2>
+          <p>
+            My innate curiosity and desire for adventures led me to test myself
+            in several industries and positions. Baker, teacher, carpenter,
+            social worker, shop manager. Name one job, and I likely did it. But
+            with some constants: my commitment to achieving company goals, my
+            unstoppable strive for delivering customers' satisfaction, my
+            unremitting care for my fellow teammates.
+          </p>
+        </div>
         <figure className="image">
           <Adventure />
         </figure>
@@ -69,13 +71,15 @@ export default function About() {
         <figure className="image">
           <Learn />
         </figure>
-        <p className="text">
-          <h1>My Present</h1>
-          Lifelong learning is my philosophy, so on top of a Master in Foreign
-          Affairs I just added a Bachelor of IT. Still, I have no intention to
-          stop studying any soon. At the moment I'm busy exploring .NET
-          framework, learning Python and digging into cloud computing.
-        </p>
+        <div className="text">
+          <h2>My Present</h2>
+          <p>
+            Lifelong learning is my philosophy, so on top of a Master in Foreign
+            Affairs I just added a Bachelor of IT. Still, I have no intention to
+            stop studying any soon. At the moment I'm busy exploring .NET
+            framework, learning Python and digging into cloud computing.
+          </p>
+        </div>
       </section>
       <div className="curve-wrapper">
         <div className="curve">
@@ -94,13 +98,15 @@ export default function About() {
         </div>
       </div>
       <section className="third">
-        <p className="text">
-          <h1>My Future</h1>
-          My goal is to start a rewarding career as a software developer. I
-          envision myself as a member of a well-rounded, ground-breaker,
-          ruthless team of high-level reachers tech geeks, always ready to
-          tackle a problem and transform it into an opportunity.
-        </p>
+        <div className="text">
+          <h2>My Future</h2>
+          <p>
+            My goal is to start a rewarding career as a software developer. I
+            envision myself as a member of a well-rounded, ground-breaker,
+            ruthless team of high-level reachers tech geeks, always ready to
+            tackle a problem and transform it into an opportunity.
+          </p>
+        </div>
         <figure className="image">
           <Team />
         </figure>
