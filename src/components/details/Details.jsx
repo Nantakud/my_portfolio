@@ -6,7 +6,7 @@ export default function Details({ text, url, alt }) {
     threshold: 0.4,
   });
   return (
-    <div className={`detail ${inView && "zoom"}`} ref={ref}>
+    <div className={`detail ${inView ? "zoom" : null}`} ref={ref}>
       <div className="text">
         <p>{text}</p>
       </div>

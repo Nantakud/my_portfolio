@@ -7,7 +7,7 @@ export default function Team() {
   });
   return (
     <svg
-      className={inView && "animate_team"}
+      className={inView ? "animate_team" : null}
       width="927"
       height="500"
       viewBox="0 0 927 500"

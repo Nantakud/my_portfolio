@@ -7,7 +7,7 @@ export default function Handshake() {
   });
   return (
     <svg
-      className={inView && "animate_hs"}
+      className={inView ? "animate_hs" : null}
       width="617"
       height="500"
       viewBox="0 0 617 500"

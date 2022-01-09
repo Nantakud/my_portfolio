@@ -13,7 +13,7 @@ export default function Adventure() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       ref={ref}
-      className={inView && "animate_adv"}
+      className={inView ? "animate_adv" : null}
     >
       <g id="adventure" clipPath="url(#clip0_1_54)">
         <g id="adventure_2" clipPath="url(#clip1_1_54)">

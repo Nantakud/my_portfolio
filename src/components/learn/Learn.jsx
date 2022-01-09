@@ -12,7 +12,7 @@ export default function Learn() {
       viewBox="0 0 649 500"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={inView && "animate_learn"}
+      className={inView ? "animate_learn" : null}
       ref={ref}
     >
       <g id="learning" clipPath="url(#clip0_1_57)">
