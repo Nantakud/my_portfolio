@@ -15,8 +15,8 @@ export default function Adventure() {
       ref={ref}
       className={inView && "animate_adv"}
     >
-      <g id="adventure" clip-path="url(#clip0_1_54)">
-        <g id="adventure_2" clip-path="url(#clip1_1_54)">
+      <g id="adventure" clipPath="url(#clip0_1_54)">
+        <g id="adventure_2" clipPath="url(#clip1_1_54)">
           <g id="right_foot">
             <path
               id="Vector"

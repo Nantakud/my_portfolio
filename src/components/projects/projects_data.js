@@ -10,12 +10,12 @@ export const projects_data = [
     visit: null,
     details: {
       detail1: {
-        text: "Lorem ipsum dolor sit amet.",
+        text: "",
         url: "assets/handshake.png",
         alt: "vediamo se funziona",
       },
       detail2: {
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sapiente eius? Officia velit architecto ullam alias molestiae est quas perferendis!",
+        text: "",
         url: "assets/adventure.svg",
         alt: "stiamo provando",
       },

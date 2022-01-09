@@ -15,7 +15,7 @@ export default function Learn() {
       className={inView && "animate_learn"}
       ref={ref}
     >
-      <g id="learning" clip-path="url(#clip0_1_57)">
+      <g id="learning" clipPath="url(#clip0_1_57)">
         <rect width="648.609" height="500" fill="white" />
         <g id="document">
           <path

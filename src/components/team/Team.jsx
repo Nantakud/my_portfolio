@@ -15,7 +15,7 @@ export default function Team() {
       xmlns="http://www.w3.org/2000/svg"
       ref={ref}
     >
-      <g id="team" clip-path="url(#clip0_1_2)">
+      <g id="team" clipPath="url(#clip0_1_2)">
         <g id="plant">
           <path
             id="Vector"
