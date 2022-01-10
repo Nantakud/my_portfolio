@@ -2,7 +2,7 @@ export const projects_data = [
   {
     title: "Escape from Alcatraz",
     description:
-      "Come out of your cell, dodge guards and dogs and run for your freedom",
+      "An action videogame. Come out of your cell, dodge guards and dogs and run for your freedom",
     video: createYoutubeLink("5nLdsNTnmOw"),
     thumb: "assets/escape_alcatraz/thumbnail.png",
     stack: ["assets/stack/javascript.svg", "assets/stack/p5js.svg"],
@@ -10,12 +10,12 @@ export const projects_data = [
     visit: null,
     details: {
       detail1: {
-        text: "",
+        text: "Built paying extreme attention and consideration on UX. I has a dedicated help section, where the player can get confidence with commands.",
         url: "assets/handshake.png",
         alt: "vediamo se funziona",
       },
       detail2: {
-        text: "",
+        text: "Coded in JavaScript, it leverages a light library called P5, which offers countless possibilities to draw on the canvas and create graphic effects.",
         url: "assets/adventure.svg",
         alt: "stiamo provando",
       },
@@ -33,7 +33,7 @@ export const projects_data = [
     visit: "http://infotech.scu.edu.au/~fvacca10/movie_zone/",
     details: {
       detail1: {
-        text: "Lorem ipsum dolor sit amet.",
+        text: "No frameworks or libraries have been used to complete the project, not even for AJAX calls or user authentication. While using only vanilla JS and PHP has been time-consuming and definitely not recommended in production, it helped me develop solid fundamentals in the two languages.",
         url: "assets/handshake.png",
         alt: "vediamo se funziona",
       },
