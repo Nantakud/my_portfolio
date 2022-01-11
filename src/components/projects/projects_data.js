@@ -38,7 +38,12 @@ export const projects_data = [
         alt: "vediamo se funziona",
       },
       detail2: {
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sapiente eius? Officia velit architecto ullam alias molestiae est quas perferendis!",
+        text: "I built Movie Zone using a Model-View-Control architectural pattern, which makes the web app scalable and extensible",
+        url: "assets/adventure.svg",
+        alt: "stiamo provando",
+      },
+      detail3: {
+        text: "Movies info are stored and retrieved from ma MySQL database that I designed and built from scratch.",
         url: "assets/adventure.svg",
         alt: "stiamo provando",
       },
@@ -48,7 +53,7 @@ export const projects_data = [
   {
     title: "Order Manager",
     description:
-      "A wordpress plugin that allows to manage each step in a fast-food order cycle. It has dedicated interfaces for different team members and an handy click'n'collect button for the customer",
+      "A WordPress plugin that allows to manage each step in a fast-food order cycle. It has dedicated interfaces for different team members and an handy click'n'collect button for the customer",
     video: createYoutubeLink("97rvh_S_uOI"),
     thumb: "assets/order_manager/thumbnail.png",
     stack: ["assets/stack/php.svg", "assets/stack/javascript.svg"],
@@ -56,12 +61,12 @@ export const projects_data = [
     visit: "https://live-rooster-clickncollect.pantheonsite.io/",
     details: {
       detail1: {
-        text: "Lorem ipsum dolor sit amet.",
+        text: "It was my first experience in the WordPress world. It helped me a great deal to develop expertise in integrating my code into a CMS",
         url: "assets/handshake.png",
         alt: "vediamo se funziona",
       },
       detail2: {
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sapiente eius? Officia velit architecto ullam alias molestiae est quas perferendis!",
+        text: "The plugin integrates WooCommerce, the most used e-commerce plugin, leveraging many of its hooks (actions and filters).",
         url: "assets/adventure.svg",
         alt: "stiamo provando",
       },
@@ -71,20 +76,24 @@ export const projects_data = [
   {
     title: "React Quiz",
     description:
-      "Test your knowledge! 10 always different questions, fetched from an external api",
+      "An educational videogame. Test your knowledge against 10 always different questions",
     video: createYoutubeLink("X-rAdkydkXA"),
     thumb: "assets/react_quiz/thumbnail.png",
-    stack: ["assets/stack/react.svg", "assets/stack/sass.svg"],
+    stack: [
+      "assets/stack/react.svg",
+      "assets/stack/typescript.svg",
+      "assets/stack/sass.svg",
+    ],
     source: "https://github.com/Nantakud/my_portfolio/commits/main",
     visit: null,
     details: {
       detail1: {
-        text: "Lorem ipsum dolor sit amet.",
+        text: "To try new technologies, I wrote it with TypeScript and styled it using the very popular CSS pre-processor Sass.",
         url: "assets/handshake.png",
         alt: "vediamo se funziona",
       },
       detail2: {
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sapiente eius? Officia velit architecto ullam alias molestiae est quas perferendis!",
+        text: "All questions are not hardcoded but fetched from an external API, ensuring a wide variety of questions and a more entertaining experience.",
         url: "assets/adventure.svg",
         alt: "stiamo provando",
       },
@@ -94,7 +103,7 @@ export const projects_data = [
   {
     title: "Fix that Bug",
     description:
-      "Help a poor developer to catch all bugs before they run away and he gets fired!",
+      "An action videogame. Help a poor developer to catch all bugs before they run away and he gets fired!",
     video: createYoutubeLink("Tza2gUvNtq8"),
     thumb: "assets/fix_that_bug/thumbnail.png",
     stack: ["assets/stack/javascript.svg", "assets/stack/phaser.svg"],
@@ -102,12 +111,12 @@ export const projects_data = [
     visit: "https://francesco-vacca.itch.io/fix-that-bug",
     details: {
       detail1: {
-        text: "Lorem ipsum dolor sit amet.",
+        text: "I coded the game to participate at a game jam, teaming-up with a professional graphic designer.",
         url: "assets/handshake.png",
         alt: "vediamo se funziona",
       },
       detail2: {
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sapiente eius? Officia velit architecto ullam alias molestiae est quas perferendis!",
+        text: "The most popular JS framework to build games is Phaser. I used it for this game the first time, sharpening my skills in navigating documentation.",
         url: "assets/adventure.svg",
         alt: "stiamo provando",
       },
@@ -129,12 +138,12 @@ export const projects_data = [
     visit: null,
     details: {
       detail1: {
-        text: "Lorem ipsum dolor sit amet.",
+        text: "I developed this mobile app as an introduction to the Angular framework, gaining exposure to its main concepts and structure.",
         url: "assets/handshake.png",
         alt: "vediamo se funziona",
       },
       detail2: {
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sapiente eius? Officia velit architecto ullam alias molestiae est quas perferendis!",
+        text: "The ionic framework allowed me to build a cross-platform mobile app and effortlessly styled it using its rich library of front-end building blocks.",
         url: "assets/adventure.svg",
         alt: "stiamo provando",
       },
