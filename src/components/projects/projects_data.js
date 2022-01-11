@@ -139,13 +139,13 @@ export const projects_data = [
     details: {
       detail1: {
         text: "I developed this mobile app as an introduction to the Angular framework, gaining exposure to its main concepts and structure.",
-        url: "assets/handshake.png",
-        alt: "vediamo se funziona",
+        url: "assets/rate_media/detail1.png",
+        alt: "screenshots of insert data pages",
       },
       detail2: {
         text: "The ionic framework allowed me to build a cross-platform mobile app and effortlessly styled it using its rich library of front-end building blocks.",
-        url: "assets/adventure.svg",
-        alt: "stiamo provando",
+        url: "assets/rate_media/detail2.png",
+        alt: "screenshots of delete data pages",
       },
     },
     id: 5,
