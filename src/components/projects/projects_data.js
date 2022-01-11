@@ -62,13 +62,13 @@ export const projects_data = [
     details: {
       detail1: {
         text: "It was my first experience in the WordPress world. It helped me a great deal to develop expertise in integrating my code into a CMS",
-        url: "assets/handshake.png",
-        alt: "vediamo se funziona",
+        url: "assets/order_manager/detail1.png",
+        alt: "screenshoots of clickncollect and order manager pages",
       },
       detail2: {
-        text: "The plugin integrates WooCommerce, the most used e-commerce plugin, leveraging many of its hooks (actions and filters).",
-        url: "assets/adventure.svg",
-        alt: "stiamo provando",
+        text: "My plugin integrates WooCommerce, the most used e-commerce plugin, leveraging many of its hooks (actions and filters).",
+        url: "assets/order_manager/detail2.png",
+        alt: "screenshots of menu and ordering interface",
       },
     },
     id: 2,
