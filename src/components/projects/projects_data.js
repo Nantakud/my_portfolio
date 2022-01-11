@@ -11,12 +11,12 @@ export const projects_data = [
     details: {
       detail1: {
         text: "Built paying extreme attention and consideration on UX. I has a dedicated help section, where the player can get confidence with commands.",
-        url: "assets/handshake.png",
+        url: "assets/escape_alcatraz/detail1.png",
         alt: "vediamo se funziona",
       },
       detail2: {
         text: "Coded in JavaScript, it leverages a light library called P5, which offers countless possibilities to draw on the canvas and create graphic effects.",
-        url: "assets/adventure.svg",
+        url: "assets/escape_alcatraz/detail2.png",
         alt: "stiamo provando",
       },
     },
