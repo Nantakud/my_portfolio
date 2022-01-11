@@ -89,13 +89,13 @@ export const projects_data = [
     details: {
       detail1: {
         text: "To try new technologies, I wrote it with TypeScript and styled it using the very popular CSS pre-processor Sass.",
-        url: "assets/handshake.png",
-        alt: "vediamo se funziona",
+        url: "assets/react_quiz/detail1.png",
+        alt: "homepage screenshot",
       },
       detail2: {
         text: "All questions are not hardcoded but fetched from an external API, ensuring a wide variety of questions and a more entertaining experience.",
-        url: "assets/adventure.svg",
-        alt: "stiamo provando",
+        url: "assets/react_quiz/detail2.png",
+        alt: "screenshots of game pages with questions and answers",
       },
     },
     id: 3,
@@ -112,12 +112,12 @@ export const projects_data = [
     details: {
       detail1: {
         text: "I coded the game to participate at a game jam, teaming-up with a professional graphic designer.",
-        url: "assets/handshake.png",
-        alt: "vediamo se funziona",
+        url: "assets/fix_that_bug/detail1.png",
+        alt: "screenshot of background created by Oddo sway",
       },
       detail2: {
         text: "The most popular JS framework to build games is Phaser. I used it for this game the first time, sharpening my skills in navigating documentation.",
-        url: "assets/adventure.svg",
+        url: "assets/fix_that_bug/detail2.png",
         alt: "stiamo provando",
       },
     },
