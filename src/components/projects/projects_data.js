@@ -12,12 +12,12 @@ export const projects_data = [
       detail1: {
         text: "Built paying extreme attention and consideration on UX. I has a dedicated help section, where the player can get confidence with commands.",
         url: "assets/escape_alcatraz/detail1.png",
-        alt: "vediamo se funziona",
+        alt: "screenshots of help page and demo page",
       },
       detail2: {
         text: "Coded in JavaScript, it leverages a light library called P5, which offers countless possibilities to draw on the canvas and create graphic effects.",
         url: "assets/escape_alcatraz/detail2.png",
-        alt: "stiamo provando",
+        alt: "collection of graphic assets",
       },
     },
     id: 0,
@@ -34,18 +34,18 @@ export const projects_data = [
     details: {
       detail1: {
         text: "No frameworks or libraries have been used to complete the project, not even for AJAX calls or user authentication. While using only vanilla JS and PHP has been time-consuming and definitely not recommended in production, it helped me develop solid fundamentals in the two languages.",
-        url: "assets/handshake.png",
-        alt: "vediamo se funziona",
+        url: "assets/movie_zone/detail1.png",
+        alt: "screenshots of admin and member login pages",
       },
       detail2: {
         text: "I built Movie Zone using a Model-View-Control architectural pattern, which makes the web app scalable and extensible",
-        url: "assets/adventure.svg",
-        alt: "stiamo provando",
+        url: "assets/movie_zone/detail2.png",
+        alt: "screenshots of backend pages and admin views",
       },
       detail3: {
         text: "Movies info are stored and retrieved from ma MySQL database that I designed and built from scratch.",
-        url: "assets/adventure.svg",
-        alt: "stiamo provando",
+        url: "assets/movie_zone/detail3.png",
+        alt: "screenshots of frontends pages and movie details",
       },
     },
     id: 1,
