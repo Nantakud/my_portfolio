@@ -84,7 +84,7 @@ export const projects_data = [
       "assets/stack/typescript.svg",
       "assets/stack/sass.svg",
     ],
-    source: "https://github.com/Nantakud/my_portfolio/commits/main",
+    source: "https://github.com/Nantakud/react_quiz",
     visit: null,
     details: {
       detail1: {
