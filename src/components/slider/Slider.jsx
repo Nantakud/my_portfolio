@@ -39,6 +39,12 @@ export default function Slider({ setProject }) {
     return newProjects;
   }
 
+  function goToTop() {
+    document.body.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+
   return (
     <div className="slider_container">
       <header>Other Projects</header>
@@ -59,6 +65,7 @@ export default function Slider({ setProject }) {
                 key={id}
                 className="slide"
                 onClick={() => {
+                  goToTop();
                   setProject(id);
                 }}
               >
