@@ -16,10 +16,10 @@ export default function Splash() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       tech > technologies.length - 2 ? setTech(0) : setTech(tech + 1);
-      return function cleanup() {
-        clearTimeout(timeout);
-      };
     }, 2500);
+    return function cleanup() {
+      clearTimeout(timeout);
+    };
   }, [tech]);
 
   return (
