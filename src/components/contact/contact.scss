@@ -55,13 +55,15 @@
 
       .title {
         font-size: 4vw;
-        animation: rot 5s infinite alternate;
-        @keyframes rot {
-          33% {
-            transform: rotate3d(1, 2, 3, 10deg);
-          }
-          66% {
-            transform: rotate3d(1, 2, 3, -10deg);
+        @media screen and(min-width:1000px) {
+          animation: rot 5s infinite alternate;
+          @keyframes rot {
+            33% {
+              transform: rotate3d(1, 2, 3, 10deg);
+            }
+            66% {
+              transform: rotate3d(1, 2, 3, -10deg);
+            }
           }
         }
       }
