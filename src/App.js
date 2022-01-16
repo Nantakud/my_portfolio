@@ -13,12 +13,12 @@ function App() {
       <div className="router">
         <Router>
           <Navbar />
+          <Sidebar />
           <Routes className="router-container">
             <Route exact path="/" element={<Splash />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
           </Routes>
-          {/* <Sidebar /> */}
         </Router>
       </div>
       <Contact />

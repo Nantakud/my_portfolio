@@ -1,8 +1,23 @@
+@import "../../global.scss";
 .sidebar-wrapper {
+  position: absolute;
+  width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+  right: -100vw;
+  z-index: 3;
+  @media screen and (max-width: 1000px) {
+    right: -90vw;
+  }
+}
+.open {
+  background-color: $dark-color;
+  opacity: 0.9;
+  right: 0;
+  align-items: center;
+  color: $light-color;
 }
 
 .links {
@@ -19,11 +34,10 @@ a {
   padding: 0.5rem;
 }
 a:visited {
-  color: black;
+  color: $light-color;
 }
 
 .arrow {
-  padding: 2rem 0.5rem 0 0.5rem;
   font-size: 2.5rem;
   cursor: pointer;
 }
