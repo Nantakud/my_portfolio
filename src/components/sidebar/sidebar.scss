@@ -1,6 +1,6 @@
 @import "../../global.scss";
 .sidebar-wrapper {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -8,6 +8,7 @@
   flex-direction: column;
   right: -100vw;
   z-index: 3;
+  overflow: hidden;
   @media screen and (max-width: 1000px) {
     right: -90vw;
   }
