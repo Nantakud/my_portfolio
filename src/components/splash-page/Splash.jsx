@@ -27,7 +27,7 @@ export default function Splash() {
       <section className="top">
         <div className="left">
           <div className="image">
-            <img src="assets/genie.png" alt="dev" />
+            <img src="assets/dev.png" alt="dev" />
             <div className="magic">
               <img src={technologies[tech]} alt="tech" />
             </div>
