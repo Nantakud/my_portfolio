@@ -13,13 +13,13 @@
     justify-content: space-around;
     position: relative;
 
-    // aspect-ratio: 900/450;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-image: url("./blob2.svg");
     @media screen and (max-width: 1000px) {
       flex-direction: column-reverse;
+      align-items: center;
     }
 
     .left {
@@ -76,19 +76,26 @@
       justify-content: space-around;
       flex-direction: column;
       position: relative;
-      padding-top: 1rem;
+      padding-top: 2rem;
       line-height: 1;
       @media screen and (max-width: 1000px) {
         width: 80%;
+        padding-top: 4rem;
       }
       h1 {
         font-family: $bubblegum;
         font-size: 5rem;
+        @media screen and (max-width: 1000px) {
+          font-size: 9vw;
+        }
       }
       p {
         font-size: 2rem;
         font-weight: 500;
         padding-right: 1rem;
+        @media screen and (max-width: 1000px) {
+          font-size: 5vw;
+        }
       }
     }
   }
@@ -102,6 +109,9 @@
       color: $second-color;
       font-size: 6rem;
       font-family: $moon-dance;
+      @media screen and (max-width: 1000px) {
+        font-size: 12vw;
+      }
     }
   }
 }
