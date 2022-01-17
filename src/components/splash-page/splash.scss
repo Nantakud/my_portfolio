@@ -13,16 +13,23 @@
     justify-content: space-around;
     position: relative;
 
-    aspect-ratio: 900/450;
+    // aspect-ratio: 900/450;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-image: url("./blob2.svg");
+    @media screen and (max-width: 1000px) {
+      flex-direction: column-reverse;
+    }
 
     .left {
       width: 65%;
       padding: 5rem 5rem 0 0;
-      overflow: hidden;
+      @media screen and (max-width: 1000px) {
+        width: 80%;
+        margin-top: 3rem;
+        padding: 0;
+      }
 
       .image {
         position: relative;
@@ -70,6 +77,10 @@
       flex-direction: column;
       position: relative;
       padding-top: 1rem;
+      line-height: 1;
+      @media screen and (max-width: 1000px) {
+        width: 80%;
+      }
       h1 {
         font-family: $bubblegum;
         font-size: 5rem;
