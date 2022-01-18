@@ -7,8 +7,6 @@ export default function Learn() {
   });
   return (
     <svg
-      width="649"
-      height="500"
       viewBox="0 0 649 500"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

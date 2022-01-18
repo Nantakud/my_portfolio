@@ -7,8 +7,6 @@ export default function Adventure() {
   });
   return (
     <svg
-      width="751"
-      height="500"
       viewBox="0 0 751 500"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
