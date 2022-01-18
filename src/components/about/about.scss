@@ -27,6 +27,7 @@
     font-size: 5rem;
     text-align: center;
     font-weight: 700;
+    line-height: 1;
   }
   padding: 2rem 2rem;
   section {
@@ -34,16 +35,30 @@
     display: flex;
     justify-content: space-evenly;
     padding: 2rem 0;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      gap: 5rem;
+    }
     .text {
       width: 40%;
       margin: 2rem;
-      padding: 1rem 3rem;
-      text-align: justify;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+        font-size: 1rem;
+        margin: 0;
+      }
 
       h2 {
         font-family: $bubblegum;
         font-size: 3rem;
+        padding: 0 3rem;
+        @media screen and (max-width: 1000px) {
+          font-size: 2rem;
+        }
+      }
+      p {
+        padding: 1rem 3rem;
       }
     }
     .image {
