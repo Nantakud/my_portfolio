@@ -9,11 +9,14 @@
   .title {
     font-size: 3rem;
     font-family: $bubblegum;
+    @media screen and (max-width: 1000px) {
+      margin-top: 3.5rem;
+    }
   }
 
   .video-responsive {
     width: 90vw;
-    height: 65vh;
+    aspect-ratio: 16/9;
 
     iframe {
       width: 100%;
