@@ -28,6 +28,9 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
 
     .stack_container {
       font-size: 1.5rem;
@@ -37,6 +40,11 @@
       align-items: center;
       justify-content: space-evenly;
       flex-direction: column;
+      @media screen and (max-width: 1000px) {
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem 0;
+      }
       .img_container {
         display: flex;
         align-content: flex-end;
@@ -57,15 +65,22 @@
       line-height: 1.4rem;
       font-weight: 700;
       width: 50%;
+      @media screen and (max-width: 1000px) {
+        flex-direction: row;
+        width: 100%;
+      }
       .text_container {
         width: 90%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         flex-direction: column;
-        text-align: justify;
+
         .text {
           padding: 1rem 2rem;
+          @media screen and (max-width: 1000px) {
+            padding: 0rem 0.5rem;
+          }
         }
       }
       .links_container {
@@ -74,6 +89,10 @@
         justify-content: space-evenly;
         width: 100%;
         margin: 1rem 0;
+        @media screen and (max-width: 1000px) {
+          width: auto;
+          margin: 1rem 1rem;
+        }
         a {
           font-size: 3rem;
           color: black;
