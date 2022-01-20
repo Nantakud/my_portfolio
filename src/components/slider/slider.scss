@@ -23,6 +23,7 @@
     width: 90%;
     @media screen and (max-width: 1000px) {
       width: 100%;
+      flex-direction: column;
     }
     .left,
     .right {
@@ -52,6 +53,7 @@
       width: 100%;
       @media screen and (max-width: 1000px) {
         height: 155px;
+        overflow: hidden;
       }
 
       .slide {
@@ -71,6 +73,26 @@
           position: absolute;
           left: 50%;
           transform: translateX(-135px);
+          opacity: 1;
+          border: none;
+        }
+      }
+    }
+    .center :nth-child(2) {
+      @media screen and (max-width: 1000px) {
+        animation: show 10s infinite alternate;
+      }
+    }
+    .center :nth-child(3) {
+      @media screen and (max-width: 1000px) {
+        animation: show 5s 5s infinite alternate;
+      }
+      @keyframes show {
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
         }
       }
     }
