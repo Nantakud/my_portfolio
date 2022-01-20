@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./navbar.scss";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { useState } from "react";
 
 export default function Navbar() {
