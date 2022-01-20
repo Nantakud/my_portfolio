@@ -11,6 +11,7 @@
 
   header {
     font-size: 3rem;
+    font-family: $bubblegum;
     color: $dark-color;
   }
   .images {
@@ -20,6 +21,9 @@
     gap: 1rem;
     align-items: center;
     width: 90%;
+    @media screen and (max-width: 1000px) {
+      width: 100%;
+    }
     .left,
     .right {
       margin: 0 1rem;
@@ -46,6 +50,10 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
+      @media screen and (max-width: 1000px) {
+        height: 155px;
+      }
+
       .slide {
         border: 3px solid rgb(61, 61, 61);
         cursor: pointer;
@@ -58,6 +66,11 @@
         }
         img {
           object-fit: cover;
+        }
+        @media screen and (max-width: 1000px) {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-135px);
         }
       }
     }
